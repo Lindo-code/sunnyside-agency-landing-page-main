@@ -93,7 +93,7 @@ p {
 }
 .images img {
   width: 25%;
-  height: 30%;
+  height: auto;
 }
 .horiz li {
   display: inline-block;

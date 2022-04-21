@@ -5,7 +5,7 @@
 ## Welcome! 👋
 
 Here's a link to the project:
-https://lindo-code.github.io/personal_website/
+https://lindo-code.github.io/sunnyside-agency-landing-page-main/
 
 ## The Project
 

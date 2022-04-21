@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  position: absolute;
+  margin: 0;
+}
+h1 {
+  font-family: "Fraunces";
+  letter-spacing: 8px;
+}
+h2 {
+  font-family: "Fraunces";
+}
+h3 {
+  font-family: "Fraunces";
+  color: hsl(198, 62%, 26%);
+}
+h3 > .photo {
+  font-family: "Fraunces";
+  color: hsl(198, 62%, 26%);
+}
+h3 > .graphic {
+  font-family: "Fraunces";
+  color: hsl(167, 40%, 24%);
+}
+h4 {
+  font-family: "Fraunces";
+  color: hsl(210, 4%, 67%);
+}
+.learn {
+  font-family: "Fraunces";
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+li {
+  font-family: "Barlow";
+  font-size: 1em;
+}
+p {
+  color: hsl(198, 62%, 26%);
+  font-family: "Barlow";
+  font-size: 1em;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.side {
+  display: flex;
+  flex-direction: row;
+}
+.side > .img0 {
+  background: rgba(0, 0, 0, 0) url('https://raw.githubusercontent.com/Lindo-code/sunnyside-agency-landing-page-main/main/images/desktop/image-transform.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 50%;
+  height: auto;
+}
+.side > .img1 {
+  background: rgba(0, 0, 0, 0) url('https://raw.githubusercontent.com/Lindo-code/sunnyside-agency-landing-page-main/main/images/desktop/image-stand-out.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 50%;
+  height: auto;
+}
+.sideText {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 50%;
+  padding: 5em;
+}
+.centerText {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+.images img {
+  width: 25%;
+  height: 30%;
+}
+.horiz li {
+  display: inline-block;
+}
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: repeat(6,auto);
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 0 10px 0 10px;
+}
+.logo {
+  margin-top: 10px;
+  padding: 5px;
+}
+.orangeBG {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0) url('https://raw.githubusercontent.com/Lindo-code/sunnyside-agency-landing-page-main/main/images/desktop/image-header.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 8em;
+}
+.redOrangeBG > .red {
+  background: rgba(0, 0, 0, 0) url('https://raw.githubusercontent.com/Lindo-code/sunnyside-agency-landing-page-main/main/images/desktop/image-graphic-design.jpg');
+  height: auto;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 4.5em;
+}
+.redOrangeBG > .orange {
+  background: rgba(0, 0, 0, 0) url('https://raw.githubusercontent.com/Lindo-code/sunnyside-agency-landing-page-main/main/images/desktop/image-photography.jpg');
+  height: auto;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 4.5em;
+}
+.title_testimonials {
+  text-align: center;
+}
+.testimonials > .testimonials0 {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em;
+  text-align: center;
+}
+.testimonials > .testimonials1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.testimonials0 > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.mobile_menu {
+  display: none;
+}
+.name {
+  font-family: "Fraunces";
+  font-weight: bold;
+  color: black;
+}
+.position {
+  color: hsl(210, 4%, 67%);
+}
+.horiz1 li {
+  display: inline-block;
+  font-family: "Barlow";
+  color: hsl(167, 40%, 24%);
+  font-weight: 900;
+  font-size: 1.2em;
+  margin: 1em;
+}
+.footer {
+  background-color: hsl(168, 34%, 41%);
+  padding: 5em;
+  margin-top: 0;
+}

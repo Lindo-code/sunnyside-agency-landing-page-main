@@ -1,77 +1,123 @@
 * {
   box-sizing: border-box;
 }
+
+html,
 body {
-  position: absolute;
+  width: 100%;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*----------| GENERAL |----------*/
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+i {
+  color: #2c7566;
 }
 h1 {
   font-family: "Fraunces";
-  letter-spacing: 8px;
+  letter-spacing: 20px;
+  font-size: 4em;
+  margin-top: 2em;
 }
+
 h2 {
   font-family: "Fraunces";
 }
+
 h3 {
   font-family: "Fraunces";
   color: hsl(198, 62%, 26%);
 }
+
 h3 > .photo {
   font-family: "Fraunces";
   color: hsl(198, 62%, 26%);
 }
+
 h3 > .graphic {
   font-family: "Fraunces";
   color: hsl(167, 40%, 24%);
 }
+
 h4 {
   font-family: "Fraunces";
   color: hsl(210, 4%, 67%);
 }
+
 .learn {
   font-family: "Fraunces";
   font-weight: bold;
   color: black;
   text-decoration: none;
 }
-li {
+
+li a {
   font-family: "Barlow";
-  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: .5em 1em .5em 1em;
+  border-radius: 50px;
 }
+
 p {
   color: hsl(198, 62%, 26%);
   font-family: "Barlow";
   font-size: 1em;
 }
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
 .side {
   display: flex;
   flex-direction: row;
 }
+
 .side > .img0 {
-  background: rgba(0, 0, 0, 0) url('https://raw.githubusercontent.com/Lindo-code/sunnyside-agency-landing-page-main/main/images/desktop/image-transform.jpg');
-  height: 100%;
+  background: rgba(0, 0, 0, 0) url("../images/desktop/image-transform.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 50%;
   height: auto;
+  padding-bottom: 35em;
 }
+
 .side > .img1 {
-  background: rgba(0, 0, 0, 0) url('https://raw.githubusercontent.com/Lindo-code/sunnyside-agency-landing-page-main/main/images/desktop/image-stand-out.jpg');
-  height: 100%;
+  background: rgba(0, 0, 0, 0) url("../images/desktop/image-stand-out.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 50%;
   height: auto;
+  padding-bottom: 35em;
 }
+
 .sideText {
   display: flex;
   flex-direction: column;
@@ -79,30 +125,28 @@ p {
   width: 50%;
   padding: 5em;
 }
-.centerText {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-}
+
 .images {
   display: flex;
   flex-direction: row;
   margin-bottom: 0;
 }
+
 .images img {
   width: 25%;
   height: auto;
 }
+
 .horiz li {
   display: inline-block;
 }
+
 .container {
   display: grid;
   height: 100vh;
-  grid-template-rows: repeat(6,auto);
+  grid-template-rows: repeat(6, auto);
 }
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -110,71 +154,93 @@ p {
   font-weight: bold;
   padding: 0 10px 0 10px;
 }
+
 .logo {
   margin-top: 10px;
   padding: 5px;
 }
+
+.arrow {
+  margin-top: 3em;
+  height: 15em;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: space-around;
+}
+
 .orangeBG {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   color: white;
-  background: rgba(0, 0, 0, 0) url('https://raw.githubusercontent.com/Lindo-code/sunnyside-agency-landing-page-main/main/images/desktop/image-header.jpg');
+  background: rgba(0, 0, 0, 0) url("../images/desktop/image-header.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 8em;
+  padding: 2em 2em 10em 2em;
 }
-.redOrangeBG > .red {
-  background: rgba(0, 0, 0, 0) url('https://raw.githubusercontent.com/Lindo-code/sunnyside-agency-landing-page-main/main/images/desktop/image-graphic-design.jpg');
+
+.red {
+  background: rgba(0, 0, 0, 0) url("../images/desktop/image-graphic-design.jpg");
   height: auto;
   width: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 4.5em;
 }
-.redOrangeBG > .orange {
-  background: rgba(0, 0, 0, 0) url('https://raw.githubusercontent.com/Lindo-code/sunnyside-agency-landing-page-main/main/images/desktop/image-photography.jpg');
+
+.orange {
+  background: rgba(0, 0, 0, 0) url("../images/desktop/image-photography.jpg");
   height: auto;
   width: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 4.5em;
 }
+
 .title_testimonials {
   text-align: center;
 }
+
 .testimonials > .testimonials0 {
   display: flex;
   justify-content: space-around;
   margin: 2em;
   text-align: center;
 }
+
 .testimonials > .testimonials1 {
   display: flex;
   justify-content: center;
   text-align: center;
 }
+
 .testimonials0 > img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
+
 .mobile_menu {
   display: none;
 }
+
 .name {
   font-family: "Fraunces";
   font-weight: bold;
   color: black;
 }
+
 .position {
   color: hsl(210, 4%, 67%);
 }
+
 .horiz1 li {
   display: inline-block;
   font-family: "Barlow";
@@ -183,8 +249,46 @@ p {
   font-size: 1.2em;
   margin: 1em;
 }
+.horizon2 {
+  margin-bottom: 2em;
+}
+.horizon2 > a {
+  padding: 1em;
+}
 .footer {
   background-color: hsl(168, 34%, 41%);
   padding: 5em;
   margin-top: 0;
+}
+
+.alignTextAtBottom {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5em;
+  margin-top: 20em;
+}
+
+.icon {
+  font-size: 2em;
+  color: #2c7566;
+}
+
+.yellow-line {
+  border-bottom: 5px solid yellow; 
+  width: fit-content;
+}
+
+.red-line {
+  border-bottom: 5px solid red;
+  width: fit-content;
+}
+
+i:hover {
+  color: white;
+}
+.link:hover {
+  color: black;
+  font-family: "Fraunces";
+  background-color: white;
 }
